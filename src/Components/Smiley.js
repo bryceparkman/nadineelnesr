@@ -12,14 +12,14 @@ class AdidasNike extends Component {
                 <Container fluid responsive>
                     <Row>
                         <Col>
-                        <div className="smileyTitle">
+                        <div className="smileyTitle" id="smileyTitleLeft">
                             Smiley:
                         </div>
                         </Col>
                         <Col>
                             <Image fluid src={require('../assets/fashion/smiley/6CF05C09-12C4-41EF-A18C-E9A784F9A93F.PNG')} alt={'Fashion'} />
                         </Col>
-                        <div className="smileyTitle">
+                        <div className="smileyTitle" id="smileyTitleRight">
                             Upcycled
                         </div>
                     </Row>
