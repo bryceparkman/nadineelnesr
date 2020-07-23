@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import withOverlay from './HoverOverlay';
+import Image from 'react-bootstrap/Image'
 
 class Home extends Component {
     constructor() {
@@ -27,9 +30,13 @@ class Home extends Component {
     getSubImages(i){
         const subImages = [];
         for(let j = 0; j < this.imagesPerRow; j++){
-            subImages.push(
-                <img key={i+j} src={this.images[i+j]} alt='info'/>
-            )
+            if(this.images[i+j] !== undefined){
+                const Img = () => <Image className="test" key={i+j} src={this.images[i+j]} alt='info'/>
+                const ImgWithOverlay = withOverlay(Img,this.images[i+j].substring(this.images[i+j].lastIndexOf('/')+1,this.images[i+j].indexOf('.')))
+                subImages.push(
+                    <ImgWithOverlay key={i+j}/>
+                )
+            }
         }
         return subImages
     }

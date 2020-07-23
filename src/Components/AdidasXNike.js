@@ -20,14 +20,14 @@ class AdidasNike extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <div className='adidasNikeCenterText'>
+                            <div className='fashionCenterText'>
                                 Envisioned collaboration between Adidas and Nike breaking cross branding "rules" between two competitor companies. Constructed and designed using old Adidas and Nike gear, practicing sustainable fashion.
                             </div>
                         </Col>
                     </Row>
                     <Row className="adidasNikeAlignRow">
                         <Col md={6} style={{marginBottom: 20}}>
-                            <Image fluid src={require(('../assets/fashion/adidasnike/FASHION _RULES_.JPG'))} alt={'Fashion'}/>
+                            <Image fluid src={require(('../assets/fashion/adidasnike/fashionrules.JPG'))} alt={'Fashion'}/>
                         </Col>
                         <Col md={6}>
                             <div className='adidasNikeColumnText'>
