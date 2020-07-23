@@ -12,35 +12,27 @@ class AdidasNike extends Component {
                 <Container fluid responsive>
                     <Row>
                         <Col>
-                        <div className="smileyTitle">
-                            Smiley:
-                        </div>
+                            <Image fluid src={require('../assets/fashion/smiley/header.png')} alt={'Fashion'} />
                         </Col>
-                        <Col>
-                            <Image fluid src={require('../assets/fashion/smiley/6CF05C09-12C4-41EF-A18C-E9A784F9A93F.PNG')} alt={'Fashion'} />
-                        </Col>
-                        <div className="smileyTitle">
-                            Upcycled
-                        </div>
                     </Row>
                     <Row>
                         <Col>
-                            <div className='adidasNikeCenterText'>
+                            <div className='fashionCenterText'>
                                 “Always Looking to Be Happy And Kind To Others. Good Karma Everyday,” the back reads. SMILEY: an upcycled leather jacket aims at pushing the boundary and stereotype of "grunge" aesthetics to one that is positive. Styled with a white dress, the dichotomy created produces a "soft grunge" look.
                             </div>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col>
-                            <Image fluid src={require(('../assets/fashion/smiley/513CAF84-B577-4478-8F34-00A3A5511CCA.PNG'))} alt={'Fashion'}/>
+                    <Row style={{display: 'flex', alignItems: 'center' }}>
+                        <Col lg>
+                            <Image fluid src={require(('../assets/fashion/smiley/sit.PNG'))} alt={'Fashion'}/>
                         </Col>
-                        <Col>
-                            <Image fluid src={require(('../assets/fashion/smiley/cover.PNG'))} alt={'Fashion'}/>
+                        <Col lg>
+                            <Image fluid src={require(('../assets/fashion/smiley/stand.png'))} alt={'Fashion'}/>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <div className="adidasNikeCenterText">
+                            <div className="fashionCenterText">
                                 The jacket features print from a discarded shirt and relocated studs which can be seen around the mouth of the smile and the sleeve. Handcrafted  and placed patches read, “optimistic mood” and “Have a Nice day” 
                             </div>
                         </Col>

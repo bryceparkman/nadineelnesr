@@ -44,11 +44,11 @@ const getAdidasNikeTimeline = (node, delay) => {
 
 const getSmileyTimeline = (node, delay) => {
     const timeline = new Timeline({ paused: true });
-    // const work = node.querySelectorAll('div');
+    const header = node.querySelector('.row')
 
-    // timeline
-    //     .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-    //     .staggerFrom(work, 0.375, { autoAlpha: 0, y: -50, ease: Power1.easeOut }, 0.125);
+    timeline
+        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
+        .staggerFrom(header, 0.375, { autoAlpha: 0, y: -10, ease: Power1.easeOut }, 0.125);  
 
     return timeline;
 }
@@ -66,7 +66,7 @@ const getArtTimeline = (node, delay) => {
 
 const getFashionTimeline = (node, delay) => {
     const timeline = new Timeline({ paused: true });
-    const work = node.querySelectorAll('.col');
+    const work = node.querySelectorAll('img');
 
     timeline
         .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
@@ -104,12 +104,10 @@ export const play = (pathname, node, appears) => {
         timeline = getHomeTimeline(node, delay);
     else if(pathname === '/fashion')
         timeline = getFashionTimeline(node,delay);
-    else if(pathname === '/fashion/adidasnike'){
+    else if(pathname === '/fashion/adidasnike')
         timeline = getAdidasNikeTimeline(node,delay);
-    }
-    else if(pathname === '/fashion/smiley'){
+    else if(pathname === '/fashion/smiley')
         timeline = getSmileyTimeline(node,delay);
-    }
     else {
         timeline = getArtTimeline(node,delay);
     }
