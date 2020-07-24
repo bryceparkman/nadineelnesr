@@ -5,11 +5,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 
-class AdidasNike extends Component {
+class Smiley extends Component {
     render() {
         return (
             <div>
-                <Container fluid responsive>
+                <Container fluid responsive className="smileyTimeline">
                     <Row>
                         <Col>
                             <Image fluid src={require('../assets/fashion/smiley/header.png')} alt={'Fashion'} />
@@ -50,4 +50,4 @@ class AdidasNike extends Component {
     }
 }
 
-export default AdidasNike
+export default Smiley

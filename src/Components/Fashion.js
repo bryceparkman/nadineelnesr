@@ -18,6 +18,12 @@ const Card2 = () =>
     </Link>
 const OverlayCard2 = withOverlay(Card2,'Smiley');
 
+const Card3 = () => 
+    <Link to="./fashion/onesixe">
+        <Image fluid className="fashionCard" src={require('../assets/fashion/onesixe/IMG_7891.JPG')} alt={'Fashion'} />
+    </Link>
+const OverlayCard3 = withOverlay(Card3,'ONESIXE');
+
 class Home extends Component {
     render() {
         return (
@@ -32,7 +38,7 @@ class Home extends Component {
                             <OverlayCard2/>
                         </Col>
                         <Col lg>
-                            <Image fluid className="fashionCard" src={require('../assets/fashion/sea/FullSizeRender.jpg')} alt={'Fashion'} />
+                            <OverlayCard3/>
                         </Col>
                         <Col lg>
                             <Image fluid className="fashionCard" src={require('../assets/fashion/gold/IMG_6915.jpg')} alt={'Fashion'} />
