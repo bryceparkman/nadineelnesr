@@ -44,7 +44,7 @@ const getAdidasNikeTimeline = (node, delay) => {
 
 const getSmileyTimeline = (node, delay) => {
     const timeline = new Timeline({ paused: true });
-    const header = node.querySelector('.row')
+    const header = node.querySelector('.smileyTimeline')
 
     timeline
         .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})

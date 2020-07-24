@@ -254,13 +254,6 @@ nav .icon {
   font-size: 3em;
 }
 
-.smileyTitle {
-  margin-bottom: 20px;
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 4em;
-  color: rgb(52, 39, 228)
-}
-
 .fashionCard {
   height: 400px;
   width: 300px;
@@ -296,6 +289,13 @@ nav .icon {
 
 .hoverOverlay:hover .hoverText {
   opacity: 1;
+}
+
+.oneSixeTitle {
+  margin-bottom: 20px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 5em;
+  color: rgb(52, 39, 228)
 }
 
 @media screen and (max-width: 500px) {
