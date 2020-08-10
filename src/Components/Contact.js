@@ -13,7 +13,7 @@ class Home extends Component {
                         nadine.elnesr@gmail.com
                     </button>
                 </Link>
-                <Container fluid responsive>
+                <Container fluid>
                     <Row>
                         <Col>
                             <a href='https://www.facebook.com/artisanofthesoul/' target='_blank' rel="noopener noreferrer">

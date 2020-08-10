@@ -215,13 +215,6 @@ nav .icon {
   height: 100px;
 }
 
-.adidasNikeTitle {
-  margin-bottom: 20px;
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 4em;
-  color: rgb(255, 115, 0)
-}
-
 .fashionCenterText {
   margin: 20px auto 100px auto;
   font-size: 1.5em;
@@ -231,7 +224,7 @@ nav .icon {
   color: white;
 }
 
-.adidasNikeColumnText {
+.fashionColumnText {
   display: flex;
   align-items: center;
   font-size: 1.5em;
@@ -240,7 +233,7 @@ nav .icon {
   font-weight: 100;
 }
 
-.adidasNikeAlignRow {
+.fashionAlignRow {
   margin-bottom: 100px;
   display: flex;
   align-items: center;
@@ -291,11 +284,37 @@ nav .icon {
   opacity: 1;
 }
 
-.oneSixeTitle {
+.fashionTitle {
   margin-bottom: 20px;
+  font-size: 4em;
   font-family: 'Cinzel Decorative', cursive;
-  font-size: 5em;
-  color: rgb(52, 39, 228)
+}
+
+.pagination button {
+  border: none;
+  background-color: #FFD700;
+  color: black;
+  margin: auto;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination button:hover {
+  background-color: #a17b1b;
+}
+
+.pagination p {
+  margin-top: 10px;
+  color: white
+}
+
+.slider-container {
+  width: 500px;
+  height: 100%;
+}
+
+.carousel-style {
+  height: 100% !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -352,7 +371,7 @@ nav .icon {
     width: 50px;
     height: 50px;
   }
-  .adidasNikeTitle {
+  .fashionTitle {
     font-size: 2em;
   }
 }
@@ -373,12 +392,14 @@ nav .icon {
     text-align: center;
     margin: auto;
   }
-  .adidasNikeCenterText {
+  .fashionCenterText {
     font-size: 1em;
     width: 100%;
   }
-  .adidasNikeColumnText {
+  .fashionColumnText {
     text-align: center;
+    font-size: 1em;
+    width: 100%;
   }
   .adidasNikeQuote {
     font-size: 1.5em;
@@ -428,7 +449,7 @@ nav .icon {
     width: 75%;
     font-size: 1.2em;
   }
-  .adidasNikeTitle {
+  .fashionTitle {
     font-size: 3em;
     text-align: center;
   }
@@ -482,7 +503,7 @@ nav .icon {
   .contactEmail {
     font-size: 1.2em;
   }
-  .adidasNikeColumnText {
+  .fashionColumnText {
     text-align: center;
   }
   .adidasNikeQuote {
@@ -522,9 +543,6 @@ nav .icon {
     flex: 100%;
     max-width: 100%;
   }
-  .adidasNikeColumnText {
-    font-size: 1.2em;
-  }
 }
 
 @media screen and (min-width: 801px) and (max-width: 960px) {
@@ -556,6 +574,9 @@ nav .icon {
   .contactEmail {
     font-size: 1.3em;
   }
+  .fashionColumnText {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1260px) {
@@ -578,7 +599,7 @@ nav .icon {
   .aboutLargeText {
     font-size: 8em;
   }
-  .adidasNikeColumnText {
+  .fashionColumnText {
     font-size: 1.5em;
   }
   .adidasNikeQuote {

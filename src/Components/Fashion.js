@@ -20,16 +20,22 @@ const OverlayCard2 = withOverlay(Card2,'Smiley');
 
 const Card3 = () => 
     <Link to="./fashion/onesixe">
-        <Image fluid className="fashionCard" src={require('../assets/fashion/onesixe/IMG_7891.JPG')} alt={'Fashion'} />
+        <Image fluid className="fashionCard" src={require('../assets/fashion/onesixe/IMG_7891.jpg')} alt={'Fashion'} />
     </Link>
 const OverlayCard3 = withOverlay(Card3,'ONESIXE');
+
+const Card4 = () => 
+    <Link to="./fashion/gold">
+        <Image fluid className="fashionCard" src={require('../assets/fashion/gold/cover.jpg')} alt={'Fashion'} />
+    </Link>
+const OverlayCard4 = withOverlay(Card4,'Everything That Shines Isn\'t Always Gold');
 
 class Home extends Component {
     render() {
         return (
             <div>
                 <div style={{ height: 75 }}></div>
-                <Container fluid responsive>
+                <Container fluid>
                     <Row>
                         <Col lg>
                             <OverlayCard1/>
@@ -41,7 +47,7 @@ class Home extends Component {
                             <OverlayCard3/>
                         </Col>
                         <Col lg>
-                            <Image fluid className="fashionCard" src={require('../assets/fashion/gold/IMG_6915.jpg')} alt={'Fashion'} />
+                            <OverlayCard4/>
                         </Col>
                     </Row>
                 </Container>

@@ -9,7 +9,7 @@ class Smiley extends Component {
     render() {
         return (
             <div>
-                <Container fluid responsive className="smileyTimeline">
+                <Container fluid className="smileyTimeline">
                     <Row>
                         <Col>
                             <Image fluid src={require('../assets/fashion/smiley/header.png')} alt={'Fashion'} />

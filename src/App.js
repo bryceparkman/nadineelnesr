@@ -10,6 +10,7 @@ import Fashion from './Components/Fashion';
 import AdidasXNike from './Components/AdidasXNike'
 import Smiley from './Components/Smiley';
 import OneSixe from './Components/OneSixe';
+import Gold from './Components/Gold';
 import FineArt from './Components/FineArt';
 import Experimental from './Components/Experimental';
 import About from './Components/About';
@@ -41,6 +42,7 @@ export default class App extends Component {
                     <Route path="/fashion/adidasnike" exact component={AdidasXNike} />
                     <Route path="/fashion/smiley" exact component={Smiley} />
                     <Route path="/fashion/onesixe" exact component={OneSixe} />
+                    <Route path="/fashion/gold" exact component={Gold} />
                     <Route path="/fineart" exact component={FineArt} />
                     <Route path="/experimental" exact component={Experimental} />
                     <Route path="/about" exact component={About} />
