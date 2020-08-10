@@ -1,85 +1,61 @@
-import { TimelineMax as Timeline, Power1 } from 'gsap';
+import { gsap, Power1 } from 'gsap'
 
 const getAboutTimeline = (node, delay) => {
     delay = 0.25;
-    const timeline = new Timeline({ paused: true });
-    const designer = node.querySelector('#designer');
-    const fineArtist = node.querySelector('#fineArtist');
-    const about = node.querySelector('.about')
+    const timeline = gsap.timeline({paused: true, delay})
 
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-        .staggerFrom(designer, 0.25, { autoAlpha: 0, x: -25,  delay, ease: Power1.easeIn }, 0.125)
-        .staggerFrom(fineArtist, 0.25, { autoAlpha: 0, x: 25,  delay, ease: Power1.easeIn }, 0.125)
-        .staggerFrom(about, 0.25, { autoAlpha: 0, x: 0,  delay, ease: Power1.easeIn }, 0.125)
+    timeline.from('#designer', {duration: 0.25, x: -25, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
+    timeline.from('#fineArtist', {duration: 0.25, x: 25, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
+    timeline.from('.about', {duration: 0.25, x: 0, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
 
     return timeline;
 }
 
 const getContactTimeline = (node, delay) => {
-    const timeline = new Timeline({ paused: true });
-    const texts = node.querySelectorAll('.col');
-    const email = node.querySelectorAll('.contactEmail');
+    const timeline = gsap.timeline({paused: true, delay})
 
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-        .staggerFrom(email, 0.375, { autoAlpha: 0, x: 25, ease: Power1.easeOut }, 0.125)
-        .staggerFrom(texts, 0.375, { autoAlpha: 0, x: 25, ease: Power1.easeOut }, 0.125)
+    timeline.from('.contactEmail', {duration: 0.375, x: 0, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
+    timeline.from('.col', {duration: 0.375, x: 25, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
 
     return timeline;
 }
 
 
 const getSmileyTimeline = (node, delay) => {
-    const timeline = new Timeline({ paused: true });
-    const header = node.querySelector('.smileyTimeline')
+    const timeline = gsap.timeline({paused: true, delay})
 
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-        .staggerFrom(header, 0.375, { autoAlpha: 0, y: -10, ease: Power1.easeOut }, 0.125);  
+    timeline.from('.smileyTimeline', {duration: 0.375, y: -10, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0})
 
     return timeline;
 }
 
 const getFashionRowsTimeline = (node, delay) => {
-    const timeline = new Timeline({ paused: true });
-    const rows = node.querySelectorAll('.row')
+    const timeline = gsap.timeline({paused: true, delay});
 
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-        .staggerFrom(rows, 0.375, { autoAlpha: 0, y: -10, ease: Power1.easeOut }, 0.125);  
+    timeline.from('.row', {duration: 0.375, y: -10, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0})
 
     return timeline;
 }
 
 const getBlankTimeline = (node, delay) => {
-    return new Timeline({ paused: true });
+    return gsap.timeline({paused: true});
 }
 
 const getFashionTimeline = (node, delay) => {
-    const timeline = new Timeline({ paused: true });
-    const work = node.querySelectorAll('img');
+    const timeline = gsap.timeline({paused: true, delay});
 
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-        .staggerFrom(work, 0.375, { autoAlpha: 0, y: -50, ease: Power1.easeOut }, 0.125);
+    timeline.from('img', {duration: 0.375, y: -50, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0})
 
     return timeline;
 }
 
 const getHomeTimeline = (node, delay) => {
-    const timeline = new Timeline({ paused: true });
-    const card = node.querySelectorAll('.cardInner > div');
-    const outline = node.querySelectorAll('.card');
-    const workCards = node.querySelectorAll('.pageCardOuter');
-    const workTogether = node.querySelectorAll('.workTogether');
+    const timeline = gsap.timeline({paused: true, delay});
 
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-        .staggerFrom(outline, 0.375, { autoAlpha: 0, x: 0, ease: Power1.easeOut }, 0.125)
-        .staggerFrom(card, 0.375, { autoAlpha: 0, x: 50, ease: Power1.easeOut }, 0.125)
-        .staggerFrom(workCards, 0.375, { autoAlpha: 0, y: -50, ease: Power1.easeOut }, 0.05)
-        .staggerFrom(workTogether, 0.375, { autoAlpha: 0, y: -50, ease: Power1.easeOut }, 0.05)
+    timeline.from('.card', {duration: 0.375, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
+    timeline.from('.cardInner > div', {duration: 0.375, x:50, ease: Power1.easeIn, stagger: 0.125, autoAlpha: 0});
+    timeline.from('.pageCardOuter', {duration: 0.375, y:-50, ease: Power1.easeIn, stagger: 0.05, autoAlpha: 0});
+    timeline.from('.workTogether', {duration: 0.375, y:-50, ease: Power1.easeIn, stagger: 0.05, autoAlpha: 0});
 
     return timeline;
 }
@@ -111,7 +87,7 @@ export const play = (pathname, node, appears) => {
 }
 
 export const exit = (node) => {
-    const timeline = new Timeline({ paused: true });
+    const timeline = gsap.timeline({paused: true});
 
     timeline.to(node, 0.15, { autoAlpha: 0, ease: Power1.easeOut });
     timeline.play();
