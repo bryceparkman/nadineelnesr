@@ -8,7 +8,7 @@ import withOverlay from './HoverOverlay'
 
 const Card1 = () => 
     <Link to="./fashion/adidasnike">
-        <Image fluid className="fashionCard" src={require('../assets/fashion/adidasnike/IMG_3544.JPG')} alt={'Fashion'} />
+        <Image fluid className="fashionCard" src={require('../assets/fashion/adidasnike/IMG_3544.jpg')} alt={'Fashion'} />
     </Link>
 const OverlayCard1 = withOverlay(Card1,'Adidas X Nike');
 
