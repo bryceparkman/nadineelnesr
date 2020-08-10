@@ -317,6 +317,24 @@ nav .icon {
   height: 100% !important;
 }
 
+@media screen and (max-width: 400px) {
+  .socials {
+    bottom: 10%;
+    right: 0%;
+    margin-bottom: -75px;
+    margin-right: -20px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .socials {
+    bottom: 10%;
+    right: 60%;
+    margin-bottom: -75px;
+    margin-right: -250px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .app {
     padding: 1em;
@@ -343,10 +361,6 @@ nav .icon {
   .socials {
     position: fixed;
     width: 100px;
-    bottom: 10%;
-    right: 50%;
-    margin-bottom: -75px;
-    margin-right: -250px;
   }
   .socials img {
     margin: 0.5em 0em;
