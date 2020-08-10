@@ -144,7 +144,7 @@ class OneSixe extends Component {
                     <img src={require('../assets/fashion/onesixe/IMG_7892.jpg')} alt={'Fashion'} />
                     <img src={require('../assets/fashion/onesixe/P104.jpg')} alt={'Fashion'} />
                 </Carousel>
-                <Link to="./contact" style={{ textDecoration: 'none', color: 'white' }}>
+                <Link to="../contact" style={{ textDecoration: 'none', color: 'white' }}>
                     <button className="workTogether">
                         <div>Let's Work Together!</div>
                     </button>

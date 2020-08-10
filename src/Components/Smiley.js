@@ -38,7 +38,7 @@ class Smiley extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Link to="./contact" style={{ textDecoration: 'none', color: 'white' }}>
+                <Link to="../contact" style={{ textDecoration: 'none', color: 'white' }}>
                     <button className="workTogether">
 
                         <div>Let's Work Together!</div>
