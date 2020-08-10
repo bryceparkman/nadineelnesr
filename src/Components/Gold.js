@@ -140,7 +140,7 @@ class Gold extends Component {
                         This garment accentuates the process as a nonlinear route and emulates that of a spiral, one that values introspection; the process proves more important  than the outcome. Its take on status quo brings in the dynamic of the passage of time. It reiterates and emphasises the ability of how tradition can persist, but how true love can overpower and provide contrast within these spaces of displacement. It is finding a space to call home when home may not exist within the realms of material. It is looking for a higher purpose, one that creates a sense of eternal place with those around you even when it may cease to exist.  The garments call for a mood that is everlasting, one that is passionate.
                     </div>
                 </Container>
-                <Link to="./contact" style={{ textDecoration: 'none', color: 'white' }}>
+                <Link to="../contact" style={{ textDecoration: 'none', color: 'white' }}>
                     <button className="workTogether">
 
                         <div>Let's Work Together!</div>

@@ -38,7 +38,7 @@ const getFashionRowsTimeline = (node, delay) => {
 }
 
 const getBlankTimeline = (node, delay) => {
-    return gsap.timeline({paused: true});
+    return gsap.timeline({paused: true, delay});
 }
 
 const getFashionTimeline = (node, delay) => {
