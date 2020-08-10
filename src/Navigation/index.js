@@ -19,6 +19,9 @@ class Nav extends Component {
   }
   render() {
     const links = routes.map(({ to, label }) => {
+      if(label === 'Fashion'){
+        return <NavLink strict to={to} key={to} style={{ color: '#a17b1b' }} activeStyle={{ color: '#FFD700' }}>{label}</NavLink>
+      }
       return <NavLink strict exact to={to} key={to} style={{ color: '#a17b1b' }} activeStyle={{ color: '#FFD700' }}>{label}</NavLink>
     })
     return (

@@ -4,20 +4,28 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 class OneSixe extends Component {
     render() {
         return (
             <div>
-                <div className="oneSixeTitle">
-                    ONESIXE
-                </div>
-                <div style={{ color: 'white', textAlign: 'center', fontSize: 20, marginBottom: 30, letterSpacing: '0.2em', fontWeight: 100 }}>
-                    The one size adjustable windbreaker
-                </div>
-                <Container fluid responsive>
+                <Container fluid>
+                    <Row>
+                        <Col>
+                            <div className="fashionTitle" style={{ color: 'rgb(52, 39, 228)' }}>
+                                ONESIXE
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <div style={{ color: 'white', textAlign: 'center', fontSize: 20, marginBottom: 30, letterSpacing: '0.2em', fontWeight: 100 }}>
+                                The one size adjustable windbreaker
+                            </div>
+                        </Col>
+                    </Row>
                     <Row>
                         <Col>
                             <Image fluid src={require('../assets/fashion/onesixe/IMG_8611.PNG')} alt={'Fashion'} style={{ marginBottom: 50 }} />
@@ -45,21 +53,21 @@ class OneSixe extends Component {
                             </div>
                         </Col>
                     </Row>
-                    <Row className="adidasNikeAlignRow">
+                    <Row className="fashionAlignRow">
                         <Col md={6} style={{ marginBottom: 20 }}>
                             <Image fluid src={require('../assets/fashion/onesixe/IMG_9115.jpg')} alt={'Fashion'} />
                         </Col>
                         <Col md={6}>
-                            <div className='adidasNikeColumnText'>
+                            <div className='fashionColumnText'>
                                 With inspiration drawn from curtains and everyday objects that can be tightened, loosened, and adjusted, this piece explores the binary of the wearable and non-wearable through its function. aesthetically, the duality of day and night, lifestyle and performance permeates and informs the design, detail, and fit of the jacket.
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className="oneSixeTitle">
+                <div className="fashionTitle" style={{ color: 'rgb(52, 39, 228)' }}>
                     The Process
                 </div>
-                <Container fluid responsive>
+                <Container fluid>
                     <Row>
                         <Col lg>
                             <Row>
@@ -98,19 +106,19 @@ class OneSixe extends Component {
                         </div>
                     </Row>
                 </Container>
-                <div className="oneSixeTitle">
+                <div className="fashionTitle" style={{ color: 'rgb(52, 39, 228)' }}>
                     Fitting
                 </div>
-                <Container fluid responsive>
+                <Container fluid>
                     <Row>
                         <Col md>
-                            <Image fluid src={require('../assets/fashion/onesixe/fitting1.png')} alt={'Fashion'} style={{ marginBottom: 20}} />
+                            <Image fluid src={require('../assets/fashion/onesixe/fitting1.png')} alt={'Fashion'} style={{ marginBottom: 20 }} />
                         </Col>
                         <Col md>
-                            <Image fluid src={require('../assets/fashion/onesixe/fitting2.png')} alt={'Fashion'} style={{ marginBottom: 20}} />
+                            <Image fluid src={require('../assets/fashion/onesixe/fitting2.png')} alt={'Fashion'} style={{ marginBottom: 20 }} />
                         </Col>
                         <Col md>
-                            <Image fluid src={require('../assets/fashion/onesixe/fitting3.png')} alt={'Fashion'} style={{ marginBottom: 20}} />
+                            <Image fluid src={require('../assets/fashion/onesixe/fitting3.png')} alt={'Fashion'} style={{ marginBottom: 20 }} />
                         </Col>
                     </Row>
                     <Row>
@@ -118,39 +126,27 @@ class OneSixe extends Component {
                             After experimenting with adjustments for the waist and bottom half, this fitting allowed for problem solving on the upper half of the jacket targeting key areas such as shoulders and chest areas.
                         </div>
                     </Row>
-                    <Row className='adidasNikeAlignRow'>
+                    <Row className='fashionAlignRow'>
                         <Col>
-                            <Image fluid src={require('../assets/fashion/onesixe/IMG_7461.JPG')} alt={'Fashion'} style={{ marginBottom: 20}} />
+                            <Image fluid src={require('../assets/fashion/onesixe/IMG_7461.JPG')} alt={'Fashion'} style={{ marginBottom: 20 }} />
                         </Col>
                         <Col>
-                            <div className='adidasNikeColumnText'>
-                                The essence of ONESIXE was created such that the piece can fit all body types with a personalized, on the go, tailored look (sans the tailor). The jacket is all inclusive and can fit body types ranging anywhere from XS petite to XXL. 
+                            <div className='fashionColumnText'>
+                                The essence of ONESIXE was created such that the piece can fit all body types with a personalized, on the go, tailored look (sans the tailor). The jacket is all inclusive and can fit body types ranging anywhere from XS petite to XXL.
                             </div>
                         </Col>
                     </Row>
                 </Container>
-                <Carousel autoPlay>
-                    <div>
-                        <img src={require('../assets/fashion/onesixe/P103.jpg')} />
-                    </div>
-                    <div>
-                        <img src={require('../assets/fashion/onesixe/P102.jpg')} />
-                    </div>
-                    <div>
-                        <img src={require('../assets/fashion/onesixe/IMG_7891.JPG')} />
-                    </div>
-                    <div>
-                        <img src={require('../assets/fashion/onesixe/IMG_7892.JPG')} />
-                    </div>
-                    <div>
-                        <img src={require('../assets/fashion/onesixe/P104.jpg')} />
-                    </div>
+                <Carousel arrows infinite>
+                    <img src={require('../assets/fashion/onesixe/P103.jpg')} alt={'Fashion'} />
+                    <img src={require('../assets/fashion/onesixe/P102.jpg')} alt={'Fashion'} />
+                    <img src={require('../assets/fashion/onesixe/IMG_7891.jpg')} alt={'Fashion'} />
+                    <img src={require('../assets/fashion/onesixe/IMG_7892.jpg')} alt={'Fashion'} />
+                    <img src={require('../assets/fashion/onesixe/P104.jpg')} alt={'Fashion'} />
                 </Carousel>
                 <Link to="./contact" style={{ textDecoration: 'none', color: 'white' }}>
                     <button className="workTogether">
-
                         <div>Let's Work Together!</div>
-
                     </button>
                 </Link>
             </div>

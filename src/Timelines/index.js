@@ -29,18 +29,6 @@ const getContactTimeline = (node, delay) => {
     return timeline;
 }
 
-const getAdidasNikeTimeline = (node, delay) => {
-    const timeline = new Timeline({ paused: true });
-    const title = node.querySelectorAll('.adidasNikeTitle');
-    const container = node.querySelectorAll('.row')
-
-    timeline
-        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-        .staggerFrom(title, 0.375, { autoAlpha: 0, y: -50, ease: Power1.easeOut }, 0.125)
-        .staggerFrom(container, 0.375, { autoAlpha: 0, y: 10, ease: Power1.easeOut }, 0.125);
-
-    return timeline;
-}
 
 const getSmileyTimeline = (node, delay) => {
     const timeline = new Timeline({ paused: true });
@@ -53,15 +41,19 @@ const getSmileyTimeline = (node, delay) => {
     return timeline;
 }
 
-const getArtTimeline = (node, delay) => {
+const getFashionRowsTimeline = (node, delay) => {
     const timeline = new Timeline({ paused: true });
-    // const work = node.querySelectorAll('div');
+    const rows = node.querySelectorAll('.row')
 
-    // timeline
-    //     .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
-    //     .staggerFrom(work, 0.375, { autoAlpha: 0, y: -50, ease: Power1.easeOut }, 0.125);
+    timeline
+        .from(node, 0, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn})
+        .staggerFrom(rows, 0.375, { autoAlpha: 0, y: -10, ease: Power1.easeOut }, 0.125);  
 
     return timeline;
+}
+
+const getBlankTimeline = (node, delay) => {
+    return new Timeline({ paused: true });
 }
 
 const getFashionTimeline = (node, delay) => {
@@ -105,11 +97,15 @@ export const play = (pathname, node, appears) => {
     else if(pathname === '/fashion')
         timeline = getFashionTimeline(node,delay);
     else if(pathname === '/fashion/adidasnike')
-        timeline = getAdidasNikeTimeline(node,delay);
+        timeline = getFashionRowsTimeline(node,delay);
     else if(pathname === '/fashion/smiley')
         timeline = getSmileyTimeline(node,delay);
+    else if(pathname === '/fashion/onesixe')
+        timeline = getFashionRowsTimeline(node,delay);
+    else if(pathname === '/fashion/gold')
+        timeline = getFashionRowsTimeline(node,delay);
     else {
-        timeline = getArtTimeline(node,delay);
+        timeline = getBlankTimeline(node,delay);
     }
     timeline.play()
 }
