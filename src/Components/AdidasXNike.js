@@ -19,7 +19,7 @@ class AdidasNike extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_8786.GIF')} alt={'Fashion'} />
+                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_8786.gif')} alt={'Fashion'} />
                         </Col>
                     </Row>
                     <Row>
@@ -41,12 +41,12 @@ class AdidasNike extends Component {
                     </Row>
                     <Row style={{ marginBottom: 50 }}>
                         <Col lg={6}>
-                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_4618.JPG')} alt={'Fashion'} style={{ marginBottom: 20 }} />
+                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_4618.jpg')} alt={'Fashion'} style={{ marginBottom: 20 }} />
                         </Col>
                         <Col lg={6}>
                             <Row>
                                 <Col>
-                                    <Image fluid src={require('../assets/fashion/adidasnike/IMG_9139.JPG')} alt={'Fashion'} style={{ marginBottom: 20 }} />
+                                    <Image fluid src={require('../assets/fashion/adidasnike/IMG_9139.jpg')} alt={'Fashion'} style={{ marginBottom: 20 }} />
                                 </Col>
                             </Row>
                             <Row className="h-50">
@@ -60,13 +60,13 @@ class AdidasNike extends Component {
                     </Row>
                     <Row>
                         <Col lg>
-                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_1979.JPG')} alt={'Fashion'} style={{ marginBottom: 50 }} />
+                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_1979.jpg')} alt={'Fashion'} style={{ marginBottom: 50 }} />
                         </Col>
                         <Col lg>
-                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_8790.GIF')} alt={'Fashion'} style={{ marginBottom: 50 }} />
+                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_8790.gif')} alt={'Fashion'} style={{ marginBottom: 50 }} />
                         </Col>
                         <Col lg>
-                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_4355.JPG')} alt={'Fashion'} style={{ marginBottom: 50 }} />
+                            <Image fluid src={require('../assets/fashion/adidasnike/IMG_4355.jpg')} alt={'Fashion'} style={{ marginBottom: 50 }} />
                         </Col>
                     </Row>
                 </Container>
