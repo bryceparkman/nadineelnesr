@@ -24,12 +24,12 @@ class About extends Component {
                         <br/><br/>
                         <img src={require('../assets/aboutme/IMG_8464.PNG')} alt={'Signature'} className="signature"/>
                     </div>
-                    <Row style={{marginTop: 50}}>
+                    {/* <Row style={{marginTop: 50}}>
                         <Col md={6} style={{margin: 'auto'}}>
                             <Image fluid src={require('../assets/aboutme/resume.jpg')} alt={'Signature'}/>
                         </Col>
                         
-                    </Row>
+                    </Row> */}
                     
                 </div>
 
