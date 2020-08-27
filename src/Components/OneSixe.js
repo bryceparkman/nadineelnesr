@@ -140,8 +140,8 @@ class OneSixe extends Component {
                 <Carousel arrows infinite>
                     <img src={require('../assets/fashion/onesixe/P103.jpg')} alt={'Fashion'} />
                     <img src={require('../assets/fashion/onesixe/P102.jpg')} alt={'Fashion'} />
-                    <img src={require('../assets/fashion/onesixe/IMG_7891.jpg')} alt={'Fashion'} />
-                    <img src={require('../assets/fashion/onesixe/IMG_7892.jpg')} alt={'Fashion'} />
+                    <img src={require('../assets/fashion/onesixe/IMG_7891.JPG')} alt={'Fashion'} />
+                    <img src={require('../assets/fashion/onesixe/IMG_7892.JPG')} alt={'Fashion'} />
                     <img src={require('../assets/fashion/onesixe/P104.jpg')} alt={'Fashion'} />
                 </Carousel>
                 <Link to="../contact" style={{ textDecoration: 'none', color: 'white' }}>
